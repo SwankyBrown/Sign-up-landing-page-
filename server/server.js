@@ -1,10 +1,10 @@
+require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
 const { sequelize } = require('./util/database');
 const { User } = require ('./models/user')
 const { Post } = require ('./models/post')
 
-require('dotenv').config()
 
 
 
@@ -44,7 +44,14 @@ sequelize.sync()
 })
 .catch(err => console.log(err))
 
+// let newUser = User.create({username: req.body.username, password: req.body.password})
 
+// let newUser = User.create(req.body)
+
+// {
+//   "username": "jhon",
+//   "password": "1234"
+// }
 
 
 
