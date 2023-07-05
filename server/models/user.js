@@ -11,6 +11,6 @@ module.exports = {
             primaryKey: true
         },
         username: DataTypes.STRING({length: 60}),
-        hashedPass: DataTypes.STRING({length: 25})
+        hashedPass: DataTypes.STRING({length: 500})
     })
 }
